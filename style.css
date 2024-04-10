@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 18px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px #333;
+    z-index: 1;
+}
+
+.map-container {
+    position:relative;
+    /* width: 100%; */
+    width: 600px;
+    height: 0;
+    padding-bottom: 56.25%;
+    z-index: 1;
+    margin: 0 auto;
+}
+iframe{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 90%;
+    height: 70%;
+    border: none;
+    border-radius: 10px;
+}
+
+/* .button {
+    display: inline-block;
+    background-color: #4caf50;
+    border-top-right-radius: 0%;
+} */
+.button {
+    display: inline-block;
+    text-align: center; 
+    margin-top: 100px; /* يمكنك تعديل هذه القيمة حسب المسافة التي ترغب فيها من الأعلى */
+    margin-bottom: 20px; /* يمكنك تعديل هذه القيمة حسب المسافة التي ترغب فيها من الأسفل */
+    background-color: #4caf50; ;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    position: absolute; /* تغيير الوضع إلى absolute */
+    bottom: 20px; /* يمكنك تعديل هذه القيمة للتحكم في المسافة من الأسفل */
+    left: 145px; /* لتوسيط الزر أفقيًا */
+    transform: translateX(-50%); /* لتوسيط الزر أفقيًا */
+    z-index: 10;
+    transition: background-color 0.3s;
+}
+.button:hover {
+    background-color: green;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 10px 0;
+}
+
+/**
+ * @license
+ * Copyright 2019 Google LLC. All Rights Reserved.
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/* 
+  * Always set the map height explicitly to define the size of the div element
+  * that contains the map. 
+  */
+  #map {
+    height: 100%;
+  }
+  
+  /* Optional: Makes the sample page fill the window. */
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
